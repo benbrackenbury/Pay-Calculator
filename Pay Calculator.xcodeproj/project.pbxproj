@@ -10,6 +10,12 @@
 		7E120D9A286B460800FC5BBE /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E120D99286B460800FC5BBE /* CloudKitManager.swift */; };
 		7E2A92E1286CB15D00F18538 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A92E0286CB15D00F18538 /* CloudKit.framework */; };
 		7E2A92E2286CB6AD00F18538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E93DA43286B2AD900331A8A /* Assets.xcassets */; };
+		7E2A92E8286CC2F400F18538 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E41B674286CAA4000904654 /* WidgetKit.framework */; };
+		7E2A92E9286CC2F400F18538 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E41B676286CAA4000904654 /* SwiftUI.framework */; };
+		7E2A92EC286CC2F400F18538 /* macOSWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A92EB286CC2F400F18538 /* macOSWidgets.swift */; };
+		7E2A92F3286CC2F500F18538 /* macOSWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7E2A92E7286CC2F400F18538 /* macOSWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E2A92F7286CC35F00F18538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E93DA43286B2AD900331A8A /* Assets.xcassets */; };
+		7E2A92F8286CC36600F18538 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E120D99286B460800FC5BBE /* CloudKitManager.swift */; };
 		7E6D3E3D286CB10600FE33BE /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E120D99286B460800FC5BBE /* CloudKitManager.swift */; };
 		7E93DA40286B2AD900331A8A /* Pay_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA3F286B2AD900331A8A /* Pay_CalculatorApp.swift */; };
 		7E93DA42286B2AD900331A8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA41286B2AD900331A8A /* ContentView.swift */; };
@@ -20,10 +26,17 @@
 		7EA4C60C286CAEEC00A46FF3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E41B674286CAA4000904654 /* WidgetKit.framework */; };
 		7EA4C60D286CAEEC00A46FF3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E41B676286CAA4000904654 /* SwiftUI.framework */; };
 		7EA4C610286CAEEC00A46FF3 /* iOSWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4C60F286CAEEC00A46FF3 /* iOSWidgets.swift */; };
-		7EA4C616286CAEED00A46FF3 /* iOSWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7EA4C60B286CAEEC00A46FF3 /* iOSWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7EA4C616286CAEED00A46FF3 /* iOSWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7EA4C60B286CAEEC00A46FF3 /* iOSWidgetsExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7E2A92F1286CC2F500F18538 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E93DA34286B2AD900331A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E2A92E6286CC2F400F18538;
+			remoteInfo = macOSWidgetsExtension;
+		};
 		7EA4C614286CAEED00A46FF3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E93DA34286B2AD900331A8A /* Project object */;
@@ -40,6 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				7E2A92F3286CC2F500F18538 /* macOSWidgetsExtension.appex in Embed Foundation Extensions */,
 				7EA4C616286CAEED00A46FF3 /* iOSWidgetsExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -50,6 +64,10 @@
 /* Begin PBXFileReference section */
 		7E120D99286B460800FC5BBE /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		7E2A92E0286CB15D00F18538 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		7E2A92E7286CC2F400F18538 /* macOSWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = macOSWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2A92EB286CC2F400F18538 /* macOSWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSWidgets.swift; sourceTree = "<group>"; };
+		7E2A92EF286CC2F500F18538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E2A92F0286CC2F500F18538 /* macOSWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOSWidgets.entitlements; sourceTree = "<group>"; };
 		7E41B674286CAA4000904654 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		7E41B676286CAA4000904654 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		7E41B689286CAB3C00904654 /* iOSWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSWidgetsExtension.entitlements; sourceTree = "<group>"; };
@@ -67,6 +85,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E2A92E4286CC2F400F18538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A92E9286CC2F400F18538 /* SwiftUI.framework in Frameworks */,
+				7E2A92E8286CC2F400F18538 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E93DA39286B2AD900331A8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +124,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7E2A92EA286CC2F400F18538 /* macOSWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				7E2A92EB286CC2F400F18538 /* macOSWidgets.swift */,
+				7E2A92EF286CC2F500F18538 /* Info.plist */,
+				7E2A92F0286CC2F500F18538 /* macOSWidgets.entitlements */,
+			);
+			path = macOSWidgets;
+			sourceTree = "<group>";
+		};
 		7E41B673286CAA4000904654 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +150,7 @@
 				7E41B689286CAB3C00904654 /* iOSWidgetsExtension.entitlements */,
 				7E93DA3E286B2AD900331A8A /* Pay Calculator */,
 				7EA4C60E286CAEEC00A46FF3 /* iOSWidgets */,
+				7E2A92EA286CC2F400F18538 /* macOSWidgets */,
 				7E41B673286CAA4000904654 /* Frameworks */,
 				7E93DA3D286B2AD900331A8A /* Products */,
 			);
@@ -123,6 +161,7 @@
 			children = (
 				7E93DA3C286B2AD900331A8A /* Pay Calculator.app */,
 				7EA4C60B286CAEEC00A46FF3 /* iOSWidgetsExtension.appex */,
+				7E2A92E7286CC2F400F18538 /* macOSWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +199,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7E2A92E6286CC2F400F18538 /* macOSWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2A92F4286CC2F500F18538 /* Build configuration list for PBXNativeTarget "macOSWidgetsExtension" */;
+			buildPhases = (
+				7E2A92E3286CC2F400F18538 /* Sources */,
+				7E2A92E4286CC2F400F18538 /* Frameworks */,
+				7E2A92E5286CC2F400F18538 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macOSWidgetsExtension;
+			productName = macOSWidgetsExtension;
+			productReference = 7E2A92E7286CC2F400F18538 /* macOSWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7E93DA3B286B2AD900331A8A /* Pay Calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E93DA4B286B2AD900331A8A /* Build configuration list for PBXNativeTarget "Pay Calculator" */;
@@ -173,6 +229,7 @@
 			);
 			dependencies = (
 				7EA4C615286CAEED00A46FF3 /* PBXTargetDependency */,
+				7E2A92F2286CC2F500F18538 /* PBXTargetDependency */,
 			);
 			name = "Pay Calculator";
 			productName = "Pay Calculator";
@@ -206,6 +263,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					7E2A92E6286CC2F400F18538 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					7E93DA3B286B2AD900331A8A = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -229,11 +289,20 @@
 			targets = (
 				7E93DA3B286B2AD900331A8A /* Pay Calculator */,
 				7EA4C60A286CAEEC00A46FF3 /* iOSWidgetsExtension */,
+				7E2A92E6286CC2F400F18538 /* macOSWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E2A92E5286CC2F400F18538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A92F7286CC35F00F18538 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E93DA3A286B2AD900331A8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +323,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E2A92E3286CC2F400F18538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2A92F8286CC36600F18538 /* CloudKitManager.swift in Sources */,
+				7E2A92EC286CC2F400F18538 /* macOSWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E93DA38286B2AD900331A8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,14 +356,80 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7E2A92F2286CC2F500F18538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E2A92E6286CC2F400F18538 /* macOSWidgetsExtension */;
+			targetProxy = 7E2A92F1286CC2F500F18538 /* PBXContainerItemProxy */;
+		};
 		7EA4C615286CAEED00A46FF3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 7EA4C60A286CAEEC00A46FF3 /* iOSWidgetsExtension */;
 			targetProxy = 7EA4C614286CAEED00A46FF3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7E2A92F5286CC2F500F18538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = macOSWidgets/macOSWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ799JZWN8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macOSWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = macOSWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benbrackenbury.Pay-Calculator.macOSWidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7E2A92F6286CC2F500F18538 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = macOSWidgets/macOSWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ799JZWN8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macOSWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = macOSWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benbrackenbury.Pay-Calculator.macOSWidgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		7E93DA49286B2AD900331A8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -403,12 +547,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Pay Calculator/Pay_Calculator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0a1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pay Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = FJ799JZWN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -417,7 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "1.0 Alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benbrackenbury.Pay-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -436,12 +581,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Pay Calculator/Pay_Calculator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0a1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pay Calculator/Preview Content\"";
 				DEVELOPMENT_TEAM = FJ799JZWN8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -450,7 +596,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "1.0 Alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.benbrackenbury.Pay-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -525,6 +671,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E2A92F4286CC2F500F18538 /* Build configuration list for PBXNativeTarget "macOSWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2A92F5286CC2F500F18538 /* Debug */,
+				7E2A92F6286CC2F500F18538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7E93DA37286B2AD900331A8A /* Build configuration list for PBXProject "Pay Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
