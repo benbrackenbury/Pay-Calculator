@@ -2,8 +2,13 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGreenColor"
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.370",
+          "green" : "0.698",
+          "red" : "0.360"
+        }
       },
       "idiom" : "universal"
     }

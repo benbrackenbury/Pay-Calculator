@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
     @EnvironmentObject var cloudKitManager: CloudKitManager
@@ -13,6 +14,7 @@ struct ContentView: View {
     @State private var showHoursLog = false
     
     @State private var hoursWorked: Double = 0
+    @AppStorage("hoursWorkedGlobal", store: UserDefaults(suiteName: "group.benbrackenbury.Pay-Calculator")) var hoursWorkedGlobal: Double = 0
     @State private var hoursPerDay: Double = 8
     @State private var pay: Double = 10.50
     @State private var incomeGoal: Double = 1170
@@ -35,7 +37,9 @@ struct ContentView: View {
             self.hoursWorked
         } set: { newVal in
             cloudKitManager.setHoursWorked(newVal)
+            self.hoursWorkedGlobal = newVal
             refreshData()
+            WidgetCenter.shared.reloadAllTimelines()
         }
         
         NavigationStack {
@@ -119,11 +123,5 @@ struct ContentView: View {
             }
         }
         .formStyle(.grouped)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
