@@ -135,7 +135,7 @@ struct iOSWidgets: Widget {
         }
         .configurationDisplayName("Hours Worked")
         .description("Displays the number of hours worked.")
-        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .accessoryInline, .accessoryCircular, .accessoryRectangular])
+        .supportedFamilies([.systemSmall, .systemMedium, .accessoryInline, .accessoryCircular, .accessoryRectangular])
     }
 }
 
