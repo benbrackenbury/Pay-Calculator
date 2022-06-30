@@ -16,6 +16,7 @@ class CloudKitManager: ObservableObject {
     @Published var hoursWorked: Double = 0.00
     @Published var hoursPerDay: Double = 8.00
     @Published var pay: Double = 10.50
+    @Published var isGoal: Bool = true
     @Published var incomeGoal: Double = 1170
     
     private let database = CKContainer.default().privateCloudDatabase
@@ -51,6 +52,7 @@ class CloudKitManager: ObservableObject {
         self.hoursWorked = keyValStore.double(forKey: "hoursWorked")
         self.hoursPerDay = keyValStore.double(forKey: "hoursPerDay")
         self.pay = keyValStore.double(forKey: "pay")
+        self.isGoal = keyValStore.bool(forKey: "isGoal")
         self.incomeGoal = keyValStore.double(forKey: "incomeGoal")
     }
     
@@ -66,6 +68,11 @@ class CloudKitManager: ObservableObject {
     
     @objc func setPay(_ pay: Double) {
         keyValStore.set(pay, forKey: "pay")
+        keyValStore.synchronize()
+    }
+    
+    @objc func setIsGoal(_ value: Bool) {
+        keyValStore.set(value, forKey: "isGoal")
         keyValStore.synchronize()
     }
     

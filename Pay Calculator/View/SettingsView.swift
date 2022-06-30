@@ -6,19 +6,26 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct SettingsView: View {
     @EnvironmentObject var cloudKitManager: CloudKitManager
     
     @State private var pay: Double = 10.50
     @State private var hoursPerDay: Double = 8
+    @State private var isGoal: Bool = true
     @State private var incomeGoal: Double = 1170
+    
+    @AppStorage("isGoalGlobal", store: UserDefaults(suiteName: "group.benbrackenbury.Pay-Calculator")) var isGoalGlobal: Bool = true
+    @AppStorage("incomeGoalGlobal", store: UserDefaults(suiteName: "group.benbrackenbury.Pay-Calculator")) var incomeGoalGlobal: Double = 1170
+    @AppStorage("payGlobal", store: UserDefaults(suiteName: "group.benbrackenbury.Pay-Calculator")) var payGlobal: Double = 10.5
     
     func refreshData() {
         cloudKitManager.getiCloudData()
         self.hoursPerDay = cloudKitManager.hoursPerDay
         self.pay = cloudKitManager.pay
         self.incomeGoal = cloudKitManager.incomeGoal
+        self.isGoal = cloudKitManager.isGoal
     }
     
     var body: some View {
@@ -34,14 +41,27 @@ struct SettingsView: View {
             self.pay
         } set: { newVal in
             cloudKitManager.setPay(newVal)
+            self.payGlobal = newVal
             refreshData()
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+        
+        let isGoalBinding = Binding<Bool> {
+            self.isGoal
+        } set: { newVal in
+            cloudKitManager.setIsGoal(newVal)
+            self.isGoalGlobal = newVal
+            refreshData()
+            WidgetCenter.shared.reloadAllTimelines()
         }
         
         let incomeGoalBinding = Binding<Double> {
             self.incomeGoal
         } set: { newVal in
             cloudKitManager.setIncomeGoal(newVal)
+            self.incomeGoalGlobal = newVal
             refreshData()
+            WidgetCenter.shared.reloadAllTimelines()
         }
         
         
@@ -70,7 +90,10 @@ struct SettingsView: View {
                     .keyboardType(.numberPad)
                     #endif
                 }
-                
+            }
+            
+            Section("Goal") {
+                Toggle("Set Goal", isOn: isGoalBinding)
                 HStack {
                     #if os(iOS)
                     Text("Income Goal")
@@ -82,6 +105,8 @@ struct SettingsView: View {
                     .keyboardType(.decimalPad)
                     #endif
                 }
+                .disabled(!isGoal)
+                .opacity(isGoal ? 1.0 : 0.4)
             }
             
             Section("About") {
@@ -105,6 +130,7 @@ struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             SettingsView()
+                .environmentObject(CloudKitManager())
         }
     }
 }

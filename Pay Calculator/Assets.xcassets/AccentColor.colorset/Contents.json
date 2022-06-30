@@ -22,6 +22,30 @@
           "red" : "0.360"
         }
       },
+      "idiom" : "iphone"
+    },
+    {
+      "color" : {
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.370",
+          "green" : "0.698",
+          "red" : "0.360"
+        }
+      },
+      "idiom" : "ipad"
+    },
+    {
+      "color" : {
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.370",
+          "green" : "0.698",
+          "red" : "0.360"
+        }
+      },
       "idiom" : "watch"
     }
   ],

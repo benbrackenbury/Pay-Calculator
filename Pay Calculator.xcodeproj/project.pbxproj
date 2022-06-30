@@ -34,6 +34,9 @@
 		7EDF7C72286CCA1200D9418F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA4E286B340800331A8A /* SettingsView.swift */; };
 		7EDF7C75286CCB3300D9418F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF7C74286CCB3300D9418F /* MenuView.swift */; };
 		7EDF7C77286CCE5900D9418F /* LogHoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF7C76286CCE5900D9418F /* LogHoursView.swift */; };
+		7EFD92BF286DE0370062A789 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD92BE286DE0370062A789 /* Widgets.swift */; };
+		7EFD92C0286DE0E60062A789 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD92BE286DE0370062A789 /* Widgets.swift */; };
+		7EFD92C2286DE0E80062A789 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFD92BE286DE0370062A789 /* Widgets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,7 @@
 		7EDF7C6F286CC87200D9418F /* WatchOS App Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchOS App Watch App.entitlements"; sourceTree = "<group>"; };
 		7EDF7C74286CCB3300D9418F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		7EDF7C76286CCE5900D9418F /* LogHoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHoursView.swift; sourceTree = "<group>"; };
+		7EFD92BE286DE0370062A789 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +230,7 @@
 			children = (
 				7EA4C60F286CAEEC00A46FF3 /* iOSWidgets.swift */,
 				7EA4C613286CAEED00A46FF3 /* Info.plist */,
+				7EFD92BE286DE0370062A789 /* Widgets.swift */,
 			);
 			path = iOSWidgets;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E2A92F8286CC36600F18538 /* CloudKitManager.swift in Sources */,
+				7EFD92C2286DE0E80062A789 /* Widgets.swift in Sources */,
 				7E2A92EC286CC2F400F18538 /* macOSWidgets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E93DA4F286B340800331A8A /* SettingsView.swift in Sources */,
+				7EFD92BF286DE0370062A789 /* Widgets.swift in Sources */,
 				7E93DA42286B2AD900331A8A /* ContentView.swift in Sources */,
 				7E93DA40286B2AD900331A8A /* Pay_CalculatorApp.swift in Sources */,
 				7E93DA51286B393D00331A8A /* LogHoursView.swift in Sources */,
@@ -435,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E6D3E3D286CB10600FE33BE /* CloudKitManager.swift in Sources */,
+				7EFD92C0286DE0E60062A789 /* Widgets.swift in Sources */,
 				7EA4C610286CAEEC00A46FF3 /* iOSWidgets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
