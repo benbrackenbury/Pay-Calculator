@@ -13,13 +13,12 @@
 		7E2A92E8286CC2F400F18538 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E41B674286CAA4000904654 /* WidgetKit.framework */; };
 		7E2A92E9286CC2F400F18538 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E41B676286CAA4000904654 /* SwiftUI.framework */; };
 		7E2A92EC286CC2F400F18538 /* macOSWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A92EB286CC2F400F18538 /* macOSWidgets.swift */; };
-		7E2A92F3286CC2F500F18538 /* macOSWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7E2A92E7286CC2F400F18538 /* macOSWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E2A92F3286CC2F500F18538 /* macOSWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7E2A92E7286CC2F400F18538 /* macOSWidgetsExtension.appex */; platformFilters = (macos, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7E2A92F7286CC35F00F18538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E93DA43286B2AD900331A8A /* Assets.xcassets */; };
 		7E2A92F8286CC36600F18538 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E120D99286B460800FC5BBE /* CloudKitManager.swift */; };
 		7E6D3E3D286CB10600FE33BE /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E120D99286B460800FC5BBE /* CloudKitManager.swift */; };
 		7E93DA40286B2AD900331A8A /* Pay_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA3F286B2AD900331A8A /* Pay_CalculatorApp.swift */; };
 		7E93DA42286B2AD900331A8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA41286B2AD900331A8A /* ContentView.swift */; };
-		7E93DA44286B2AD900331A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E93DA43286B2AD900331A8A /* Assets.xcassets */; };
 		7E93DA48286B2AD900331A8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E93DA47286B2AD900331A8A /* Preview Assets.xcassets */; };
 		7E93DA4F286B340800331A8A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA4E286B340800331A8A /* SettingsView.swift */; };
 		7E93DA51286B393D00331A8A /* LogHoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA50286B393D00331A8A /* LogHoursView.swift */; };
@@ -27,6 +26,14 @@
 		7EA4C60D286CAEEC00A46FF3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E41B676286CAA4000904654 /* SwiftUI.framework */; };
 		7EA4C610286CAEEC00A46FF3 /* iOSWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4C60F286CAEEC00A46FF3 /* iOSWidgets.swift */; };
 		7EA4C616286CAEED00A46FF3 /* iOSWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7EA4C60B286CAEEC00A46FF3 /* iOSWidgetsExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7EDF7C64286CC80300D9418F /* WatchOS_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF7C63286CC80300D9418F /* WatchOS_AppApp.swift */; };
+		7EDF7C66286CC80300D9418F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF7C65286CC80300D9418F /* ContentView.swift */; };
+		7EDF7C68286CC80300D9418F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDF7C67286CC80300D9418F /* Assets.xcassets */; };
+		7EDF7C6B286CC80300D9418F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDF7C6A286CC80300D9418F /* Preview Assets.xcassets */; };
+		7EDF7C71286CC96200D9418F /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E120D99286B460800FC5BBE /* CloudKitManager.swift */; };
+		7EDF7C72286CCA1200D9418F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E93DA4E286B340800331A8A /* SettingsView.swift */; };
+		7EDF7C75286CCB3300D9418F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF7C74286CCB3300D9418F /* MenuView.swift */; };
+		7EDF7C77286CCE5900D9418F /* LogHoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF7C76286CCE5900D9418F /* LogHoursView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7E2A930E286CC4E200F18538 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E41B684286CAA4100904654 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +99,14 @@
 		7EA4C60B286CAEEC00A46FF3 /* iOSWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iOSWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA4C60F286CAEEC00A46FF3 /* iOSWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidgets.swift; sourceTree = "<group>"; };
 		7EA4C613286CAEED00A46FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EDF7C61286CC80200D9418F /* Pay Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDF7C63286CC80300D9418F /* WatchOS_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOS_AppApp.swift; sourceTree = "<group>"; };
+		7EDF7C65286CC80300D9418F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7EDF7C67286CC80300D9418F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EDF7C6A286CC80300D9418F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7EDF7C6F286CC87200D9418F /* WatchOS App Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchOS App Watch App.entitlements"; sourceTree = "<group>"; };
+		7EDF7C74286CCB3300D9418F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		7EDF7C76286CCE5900D9418F /* LogHoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHoursView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +133,13 @@
 				7E2A92E1286CB15D00F18538 /* CloudKit.framework in Frameworks */,
 				7EA4C60D286CAEEC00A46FF3 /* SwiftUI.framework in Frameworks */,
 				7EA4C60C286CAEEC00A46FF3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF7C5E286CC80200D9418F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +183,7 @@
 				7E93DA3E286B2AD900331A8A /* Pay Calculator */,
 				7EA4C60E286CAEEC00A46FF3 /* iOSWidgets */,
 				7E2A92EA286CC2F400F18538 /* macOSWidgets */,
+				7EDF7C62286CC80300D9418F /* WatchOS App Watch App */,
 				7E41B673286CAA4000904654 /* Frameworks */,
 				7E93DA3D286B2AD900331A8A /* Products */,
 			);
@@ -162,6 +195,7 @@
 				7E93DA3C286B2AD900331A8A /* Pay Calculator.app */,
 				7EA4C60B286CAEEC00A46FF3 /* iOSWidgetsExtension.appex */,
 				7E2A92E7286CC2F400F18538 /* macOSWidgetsExtension.appex */,
+				7EDF7C61286CC80200D9418F /* Pay Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +230,28 @@
 			path = iOSWidgets;
 			sourceTree = "<group>";
 		};
+		7EDF7C62286CC80300D9418F /* WatchOS App Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				7EDF7C6F286CC87200D9418F /* WatchOS App Watch App.entitlements */,
+				7EDF7C63286CC80300D9418F /* WatchOS_AppApp.swift */,
+				7EDF7C65286CC80300D9418F /* ContentView.swift */,
+				7EDF7C67286CC80300D9418F /* Assets.xcassets */,
+				7EDF7C69286CC80300D9418F /* Preview Content */,
+				7EDF7C74286CCB3300D9418F /* MenuView.swift */,
+				7EDF7C76286CCE5900D9418F /* LogHoursView.swift */,
+			);
+			path = "WatchOS App Watch App";
+			sourceTree = "<group>";
+		};
+		7EDF7C69286CC80300D9418F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7EDF7C6A286CC80300D9418F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +280,7 @@
 				7E93DA39286B2AD900331A8A /* Frameworks */,
 				7E93DA3A286B2AD900331A8A /* Resources */,
 				7E41B684286CAA4100904654 /* Embed Foundation Extensions */,
+				7E2A930E286CC4E200F18538 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -253,6 +310,23 @@
 			productReference = 7EA4C60B286CAEEC00A46FF3 /* iOSWidgetsExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		7EDF7C60286CC80200D9418F /* WatchOS App Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDF7C6E286CC80300D9418F /* Build configuration list for PBXNativeTarget "WatchOS App Watch App" */;
+			buildPhases = (
+				7EDF7C5D286CC80200D9418F /* Sources */,
+				7EDF7C5E286CC80200D9418F /* Frameworks */,
+				7EDF7C5F286CC80200D9418F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchOS App Watch App";
+			productName = "WatchOS App Watch App";
+			productReference = 7EDF7C61286CC80200D9418F /* Pay Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -270,6 +344,9 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					7EA4C60A286CAEEC00A46FF3 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					7EDF7C60286CC80200D9418F = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -290,6 +367,7 @@
 				7E93DA3B286B2AD900331A8A /* Pay Calculator */,
 				7EA4C60A286CAEEC00A46FF3 /* iOSWidgetsExtension */,
 				7E2A92E6286CC2F400F18538 /* macOSWidgetsExtension */,
+				7EDF7C60286CC80200D9418F /* WatchOS App Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -308,7 +386,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E93DA48286B2AD900331A8A /* Preview Assets.xcassets in Resources */,
-				7E93DA44286B2AD900331A8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +394,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E2A92E2286CB6AD00F18538 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF7C5F286CC80200D9418F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDF7C6B286CC80300D9418F /* Preview Assets.xcassets in Resources */,
+				7EDF7C68286CC80300D9418F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,11 +439,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EDF7C5D286CC80200D9418F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDF7C66286CC80300D9418F /* ContentView.swift in Sources */,
+				7EDF7C77286CCE5900D9418F /* LogHoursView.swift in Sources */,
+				7EDF7C75286CCB3300D9418F /* MenuView.swift in Sources */,
+				7EDF7C72286CCA1200D9418F /* SettingsView.swift in Sources */,
+				7EDF7C64286CC80300D9418F /* WatchOS_AppApp.swift in Sources */,
+				7EDF7C71286CC96200D9418F /* CloudKitManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		7E2A92F2286CC2F500F18538 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilters = (
+				macos,
+			);
 			target = 7E2A92E6286CC2F400F18538 /* macOSWidgetsExtension */;
 			targetProxy = 7E2A92F1286CC2F500F18538 /* PBXContainerItemProxy */;
 		};
@@ -668,6 +770,67 @@
 			};
 			name = Release;
 		};
+		7EDF7C6C286CC80300D9418F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchOS App Watch App/WatchOS App Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchOS App Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = FJ799JZWN8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ".com.benbrackenbury.Pay-Calculator.watch";
+				PRODUCT_NAME = "Pay Calculator";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		7EDF7C6D286CC80300D9418F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchOS App Watch App/WatchOS App Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchOS App Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = FJ799JZWN8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ".com.benbrackenbury.Pay-Calculator.watch";
+				PRODUCT_NAME = "Pay Calculator";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -703,6 +866,15 @@
 			buildConfigurations = (
 				7EA4C618286CAEED00A46FF3 /* Debug */,
 				7EA4C619286CAEED00A46FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDF7C6E286CC80300D9418F /* Build configuration list for PBXNativeTarget "WatchOS App Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDF7C6C286CC80300D9418F /* Debug */,
+				7EDF7C6D286CC80300D9418F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

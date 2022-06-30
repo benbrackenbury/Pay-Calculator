@@ -94,6 +94,9 @@ struct SettingsView: View {
         }
         .formStyle(.grouped)
         .navigationTitle("Settings")
+        #if os(watchOS)
+        .navigationBarTitleDisplayMode(.inline)
+        #endif
         .onAppear(perform: refreshData)
     }
 }
